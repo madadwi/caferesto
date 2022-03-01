@@ -1,0 +1,311 @@
+body {
+    font-family: Utopia;
+    position: relative;
+}
+
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 10px; }
+/* Track */
+::-webkit-scrollbar-track {
+  	box-shadow: inset 0 0 5px grey; 
+  	border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  	background: #003A08; 
+  	border-radius: 10px;
+    border: 1px solid #f0bb62;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover { background: #f0bb62; }
+
+
+/* ---------- Loading ---------- */
+#anim-load {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 999;
+}
+#loading {
+    width: 150px;
+    height: 150px;
+    border: 10px solid gray;
+    border-top-color: #f0bb62;
+    border-radius: 100%;
+    position: fixed;    
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    animation: putar 2s linear infinite;
+}
+@keyframes putar {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+
+/* ---------- Navbar ---------- */
+.navbar-home{
+    font-family: Utopia !important;
+    background-color: rgba(0, 0, 0, 0.1) !important;
+    font-size: 21px;
+    border-bottom: 2px solid white;
+    z-index: 20 !important;
+}
+
+/* Logo */
+.header-logo {
+    position: absolute;
+    background-color: #0E1D02;
+    top: 0;
+    left: 30px;
+    border: 2px solid white;
+    border-top: none;
+}
+.header-logo img {
+    width: 150px;
+    margin: 25px 20px 25px 20px;
+}
+
+/* Menu Navbar */
+.navbar-nav {
+    position: relative;
+    margin-left: 95%;
+    transform: translate(-95%);
+}
+.nav-item {
+    padding: 0px 7px;
+}
+
+
+/* ---------- Background Default ---------- */
+.background {
+    width: 100%;
+    height: 100vh;
+    color: white;
+    z-index: -1;
+    position: fixed;
+}
+.background img {
+    margin-left: -150px;
+    margin-top: -100px;
+    z-index: -1;
+    filter: brightness(.8);
+}
+
+
+/* ---------- Home Page ---------- */
+/* Home Section */
+#home {
+    background-color: transparent;
+    width: 100%;
+    height: 100vh;
+}
+.content-home {
+    z-index: 5;
+    position: absolute;
+    margin-top: 210px;
+    right: 50px;
+}
+
+/* Content */
+.ch-1, .ch-2 {
+    width: 500px;
+    height: 300px;
+    box-shadow: -2px 2px 10px black;
+}
+.ch-1 {
+    background-color: #003A08;
+}
+.ch-2 {
+    margin-top: -350px;
+    margin-left: 50px;
+    z-index: 6;
+    background-color: #0E1D02;
+    color: white;
+    font-size: 20px;
+    padding: 30px 20px;
+}
+.ch-2 img {
+    width: 200px;
+    margin-bottom: 20px;
+} 
+
+/* Button Login */
+.form-login {
+    font-family: Utopia;
+    background-color: #F0BB62;
+    padding: 12px 100px;
+    position: absolute;
+    top: 450px;
+    box-shadow: 2px 3px 10px black;
+}
+.menu-login a{
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    transition: .5s;
+}
+.menu-login a:hover {
+    color: white;
+}
+
+/* Copyright */
+.copyright-h {
+    position: absolute;
+    z-index: 4;
+    top: 610px;
+    right: 30px;
+    font-weight: bold;
+}
+
+
+/* ---------- About Page ---------- */
+#about {
+    background-color: #D9C6B5;
+    height: 100vh;
+    color: white;
+}
+
+/* Content Left*/
+.ca-1 {
+    background-color: #0E1D02;
+    position: absolute;
+    width: 43%;
+    height: 110vh;
+    margin-top: -10vh;
+    padding: 20px 130px 20px 20px;
+}
+.logo-about {
+    border-bottom: 5px solid #F0BB62;
+    padding-left: 30px;
+    margin-top: 40%;
+}
+.logo-about img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+.text-about {
+    text-align: center;
+    font-size: 20px;
+    padding: 50px;
+    margin-top: 10px;
+}
+
+/* Content Right */
+.ca-2 {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    margin-top: 180px;
+    width: 63%;
+    height: 430px;
+    background-color: #003A08;
+    box-shadow: -3px 3px 10px black;
+}
+.image-about {
+    position: absolute;
+    margin-top: -70px;
+}
+.image-about img {
+    width: 70%;
+    margin-left: 150px;
+    border: 2px solid white;
+    box-shadow: 3px 3px 10px black;
+}
+.circle {
+    position: absolute;
+    z-index: 4;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 8px solid #F0BB62;
+    margin-top: 200px;
+    margin-left: -70px;
+}
+
+
+/* ---------- Menu Page ---------- */
+#menu {
+    width: 100%;
+    height: 100vh;
+    background-color: #D9C6B5;
+}
+
+/* Content */
+.content-menu {
+    width: 100%;
+}
+.content-menu img {
+    width: 100%;
+    position: relative;
+}
+.menu-card {
+    position: absolute;
+    width: 100%;
+    margin-top: -100px;
+    padding: 0px 50px;
+}
+.content-card {
+    width: 100%;
+    max-height: 450px;
+    overflow-y: scroll;
+    display: flex;
+    overflow-x: auto;
+    padding: 15px 0px;
+    border-left: 2px solid rgba(0, 0, 0, 0.555);
+    border-right: 2px solid rgba(0, 0, 0, 0.555);
+}
+.content-card::-webkit-scrollbar { width: 0px; }
+.content-card::-webkit-scrollbar-track {
+  	box-shadow: inset 0 0 0px rgba(255, 255, 255, 0); 
+}
+.content-card::-webkit-scrollbar-thumb {
+  	background: #ffffff00; 
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+.content-card::-webkit-scrollbar-thumb:hover { background: #ffffff00; }
+
+/* Menu Card */
+.content-card .card-item {
+    min-width: 300px;
+    max-width: 300px;
+    height: 400px;
+    background-image: linear-gradient(30deg, black, #003A08);
+    margin: 0px 25px;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 2px 3px 5px black;
+    transition: .5s;
+}
+.content-card .card-item:hover {
+    transform: scale(1.04);
+}
+.img-card img{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.text-card h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #F0BB62;
+}
+.text-card {
+    padding: 10px 20px;
+}
+
+
+/* ---------- Contact/Footer Page ---------- */
+#contact {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(36, 36, 36);
+}

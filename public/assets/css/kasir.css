@@ -1,0 +1,54 @@
+/* Form Search */
+.form-control {
+    max-width: 250px;
+    position: absolute;
+    right: 30px;
+    top: 80px;
+    border: none !important;
+    outline: none !important;
+    border-radius: 10px !important;
+    background: rgba(255, 255, 255, 0.296) !important;
+    box-shadow: inset 2px 2px 5px black, inset -1px -1px 4px rgba(255, 255, 255, 0.57);
+}
+.form-control::placeholder {
+    color: #000000 !important;
+}
+.form-control:focus {
+    background-color: #000000 !important;
+    color: white !important;
+}
+
+
+/* ---------- Content Menu ---------- */
+/* Content Menu */
+.list-menu {
+    margin-top: 30px;
+}
+/* Product Menu */
+.card {
+    box-shadow: 2px 2px 5px black;
+    border-radius: 15px !important;
+    max-width: 300px;
+    transition: all .5s;
+}
+.card:hover {
+    transform: scale(1.04);
+}
+/* Menu Image */
+.card img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+/* Menu Description */
+.card-body {
+    background-image: linear-gradient(30deg, black, #575555);
+    color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+/* Name Menu */
+.card-body h4 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #F0BB62;
+}

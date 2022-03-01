@@ -1,0 +1,402 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 10px; }
+/* Track */
+::-webkit-scrollbar-track {
+  	box-shadow: inset 0 0 5px grey;
+  	border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  	background: #575555;
+  	border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover { background: #f0bb62; }
+
+
+/* Content */
+.main-menu {
+    padding: 20px 30px;
+}
+
+
+/* ---------- Loading ---------- */
+#anim-load {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 999;
+}
+#loading {
+    width: 180px;
+    height: 180px;
+    border: 10px solid gray;
+    border-top-color: #f0bb62;
+    border-radius: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    animation: putar 2s linear infinite;
+}
+
+
+/* ---------- Title Page ---------- */
+.title-menu {
+    max-width: 200px;
+    padding-left: 20px;
+    border-bottom: 2px solid black;
+}
+.title-keranjang,
+.title-datauser,
+.title-editUser {
+    max-width: 350px;
+    padding-left: 20px;
+    border-bottom: 2px solid black;
+}
+.title-buat,
+.title-edit,
+.title-bayar,
+.title-tambahUser {
+    max-width: 450px;
+    padding-left: 20px;
+    border-bottom: 2px solid black;
+}
+/* Title */
+.title-menu img, .title-keranjang img, .title-buat img,
+.title-edit img, .title-bayar img,.title-datauser img,
+.title-tambahUser img, .title-editUser img {
+    height: 40px;
+}
+.title-menu, .title-keranjang, .title-buat,
+.title-edit, .title-bayar, .title-datauser,
+.title-tambahUser, .title-editUser {
+    margin-bottom: 30px;
+}
+
+
+/* ---------- Side Navbar ---------- */
+/* Body Sidenav */
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    box-shadow: 2px 0px 10px #f0bb62;
+}
+/* Close Button */
+.sidenav .closebtn {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+/* Rz Logo */
+.my-logo {
+    width: 100%;
+    text-align: center;
+}
+.rz-logo {
+    width: 150px;
+}
+/* List Menu Navbar */
+.menu-sidenav {
+    width: 100%;
+    margin-top: 50px;
+}
+.sidenav li {
+    font-style: italic;
+    color: white;
+    font-size: 25px;
+    list-style-type: none;
+    padding: 8px 0px 8px 20px;
+    border-top: 2px solid  #f0bb62;
+    border-bottom: 2px solid  #f0bb62;
+    margin-bottom: 10px;
+    transition: .3s;
+    cursor: pointer;
+}
+.sidenav li:hover, .sidenav .active{
+    background-color:  #313131;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 2px solid #f0bb62;
+    border-left: none;
+}
+.sidenav .active {
+    background-image: linear-gradient(15deg, black, #575555);
+}
+.sidenav a{
+    text-decoration: none;
+    font-size: 25px;
+    transition: 0.3s;
+    color: white;
+}
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+/* Responsive */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+
+/* ---------- Header Navbar ---------- */
+/* Header */
+.navbar {
+    background-color: #000000;
+    z-index: 2 !important;
+}
+/* Button Open Sidenav */
+#button-sidenav {
+    font-size:30px;
+    cursor:pointer;
+    color:rgba(255, 255, 255, 0.563);
+    transition: .5s;
+    display: none;
+}
+#button-sidenav:hover {
+    color: white;
+}
+
+
+/* ---------- Main Content ---------- */
+/* Content */
+#main {
+    transition: margin-left .5s;
+    background-color: #D9C6B5;
+    min-height: 100vh;
+    margin-left: 250px;
+}
+
+
+/* ---------- Table Content ---------- */
+/* Button Tambahkan */
+.title-keranjang a,
+.title-datauser a {
+    text-decoration: none;
+    color: #f0bb62;
+    background-color: #000000;
+    letter-spacing: 1px;
+    font-weight: 400;
+    border-radius: 10px;
+    padding: 3px 10px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.556);
+    position: absolute;
+    right: 30px;
+    top: 85px;
+    border-top: 2px solid rgb(105, 105, 105);
+    border-left: 2px solid rgb(105, 105, 105);
+    border-bottom: 2px solid rgb(37, 37, 37);
+    border-right: 2px solid rgb(37, 37, 37);
+    transition: .5s;
+}
+.title-keranjang a:hover,
+.title-datauser a:hover {
+    color: white;
+    background-color: #575555;
+}
+
+/* Table */
+.content-table {
+    width: 100%;
+}
+.content-table table {
+    width: 100%;
+    text-align: center;
+
+}
+.content-table table th {
+    background-image: linear-gradient(10deg, black, #000000);
+
+    color: white;
+    padding: 5px 0px;
+    border-radius: 15px;
+}
+.content-table table td {
+    border-bottom: 1px solid black;
+    padding: 8px 0px;
+    font-weight: 600;
+    cursor: default;
+}
+.content-table td img {
+    max-width: 100px;
+    cursor: pointer;
+    transition: .5s;
+}
+.content-table td img:hover {
+    opacity: .7;
+    transform: scale(1.03);
+}
+td .edit, td .delete, td .buy{
+    text-decoration: none;
+    background-color: #000000;
+    color: #f0bb62;
+    border-radius: 5px;
+    transition: .5s;
+    padding: 5px;
+    border-top: 2px solid rgb(105, 105, 105);
+    border-left: 2px solid rgb(105, 105, 105);
+    border-bottom: 2px solid rgb(37, 37, 37);
+    border-right: 2px solid rgb(37, 37, 37);
+}
+td .edit:hover, td .buy:hover {
+    background-color: #575555;
+    color: white;
+}
+td .delete:hover {
+    background-color: red;
+    color: white;
+}
+.content-table .desc {
+    padding: 0px 20px;
+}
+.table-laporan {
+    margin-top: 60px;
+}
+
+
+/* ---------- Content Tambah/Edit ---------- */
+/* Table Input */
+.content-create {
+    width: 100%;
+    margin-top: 20px;
+    padding: 0px 100px;
+}
+.content-create label, .filter label {
+    margin: 5px 10px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.content-create .icon-input {
+    position: absolute;
+    padding: 7px;
+    border-right: 1px solid rgba(94, 94, 94, 0.419);
+    margin-left: 5px;
+}
+.content-create .input-text{
+    width: 100%;
+    border: none;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.707), inset -2px -2px 5px rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 0px 20px 0px 50px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.content-create .role-input {
+    border-radius: 20px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.707), inset -2px -2px 5px rgb(255, 255, 255);
+}
+.role-input .role-logo {
+    padding: 2px 7px 2px 0px;
+    border-right: 1px solid rgba(94, 94, 94, 0.419);
+}
+.role-input input {
+    margin-right: 30px;
+}
+.textarea-input textarea{
+    width: 100%;
+    height: 120px;
+    padding: 0px 20px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: none;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.707), inset -2px -2px 5px rgb(255, 255, 255);
+}
+.filter .input-date  {
+    border: none;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.707), inset -2px -2px 5px rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 0px 20px 0px 50px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+/* Button Input */
+.button-input {
+    margin-top: 1rem;
+    margin-left: auto;
+    /* position: absolute; */
+    /* right: 50px;
+    bottom: 30px; */
+    /* margin-top: 100px; */
+    display: flex;
+    justify-content: end;
+}
+.btn-back, .btn-submit, .print a {
+    color: white;
+    padding: 5px 20px;
+    border-radius: 10px;
+    box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.849), 2px 2px 5px rgb(0, 0, 0);
+    transition: .5s;
+    text-decoration: none;
+}
+.btn-back{
+    background-color: grey;
+    margin-right: 10px;
+    border-top: 2px solid rgb(105, 105, 105);
+    border-left: 2px solid rgb(105, 105, 105);
+    border-bottom: 2px solid rgb(37, 37, 37);
+    border-right: 2px solid rgb(37, 37, 37);
+}
+.btn-back:hover {
+    text-decoration: none;
+    color: white;
+    transform: scale(1.04) !important;
+    background-color: rgb(67, 67, 67);
+}
+.btn-submit, .print a {
+    background-color: #000000;
+}
+.btn-submit:hover, .print a:hover {
+    transform: scale(1.04);
+    background-color: #575555;
+}
+.print a {
+    position: absolute;
+    right: 30px;
+}
+
+
+/* ---------- Footer ---------- */
+#main-footer {
+    transition: margin-left .5s;
+    background-color: black;
+    margin-left: 250px;
+    -webkit-transition: margin-left .5s;
+    -moz-transition: margin-left .5s;
+    -ms-transition: margin-left .5s;
+    -o-transition: margin-left .5s;
+}
+.main-footer {
+    padding: 50px;
+    color: white;
+}
+.invalid {
+    color: red;
+    font-size: 12px;
+}
